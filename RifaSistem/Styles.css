@@ -1,0 +1,181 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Color de fondo opcional */
+}
+
+.container {
+    width: 140%;
+    max-width: 900px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centra el contenido dentro del contenedor */
+}
+
+    .container div {
+        margin-bottom: 10px;
+        text-align: center; /* Alinea el texto a la izquierda */
+    }
+
+    .container label {
+        display: inline-block; /* Para alinear horizontalmente */
+        width: 100px; /* Ancho deseado para las etiquetas */
+        margin-right: 10px;
+        text-align: right; /* Alinea el texto a la derecha dentro de la etiqueta */
+    }
+
+    .container input, .container select, .container .btn {
+        display: inline-block; /* Para alinear horizontalmente */
+        width: calc(100% - 110px); /* Ancho restante para los inputs y selects */
+        max-width: 300px; /* Máximo ancho para inputs y selects */
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+input[type="text"], input[type="password"], textarea {
+    width: 100%; /* Ancho completo del contenedor */
+    padding: 8px; /* Espaciado interno */
+    font-size: 14px; /* Tamaño de la fuente */
+    border: 1px solid #ced4da; /* Borde delgado */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* El tamaño total incluye el relleno y el borde */
+}
+
+/*
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centra el contenido dentro del contenedor 
+}
+    */
+.containerR {
+    width: auto;
+    max-width: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centra el contenido dentro del contenedor */
+}
+
+    .containerR div {
+        margin-bottom: 10px;
+        text-align: center; /* Alinea el texto a la izquierda */
+    }
+
+    .containerR label {
+        display: block; /* Hacer que las etiquetas sean de bloque para ocupar toda la línea */
+        width: 100%; /* Ancho completo dentro del contenedor */
+        text-align: center; /* Alineación centrada del texto */
+        margin-bottom: 5px; /* Espacio inferior entre etiquetas */
+    }
+
+    .containerR input[type="radio"] {
+        display: none; /* Oculta el radio button por defecto */
+    }
+
+    /* Estilo del radio button personalizado */
+    .containerR .radio-group {
+        display: inline-block;
+        border: 1px solid #ccc; /* Borde del contenedor del radio button */
+        border-radius: 10px; /* Bordes redondeados */
+        overflow: hidden; /* Evita que los radios sobresalgan del borde */
+
+    }
+
+        .containerR .radio-group label {
+            display: inline-block;
+            padding: 10px 100px; /* Espaciado interno */
+            cursor: pointer; /* Cambia el cursor al pasar por encima */
+            user-select: none; /* Evita la selección de texto */
+            transition: background-color 0.3s ease; /* Transición suave */
+        }
+
+            .containerR .radio-group label:hover {
+                background-color: #f0f0f0; /* Color de fondo al pasar el ratón */
+            }
+
+        .containerR .radio-group input[type="radio"]:checked + label {
+            background-color: #4CAF50; /* Color de fondo cuando está seleccionado */
+            color: white; /* Color de texto cuando está seleccionado */
+        }
+
+
+
+.grid-container {
+    margin-top: 20px;
+}
+
+    /* Estilos para el GridView */
+    .grid-container table {
+        width: 100%;
+        border-collapse: collapse; /* Colapsar bordes de las celdas */
+        text-align: center; /* Alinear texto al centro en todas las celdas */
+    }
+
+    /* Estilo para todas las celdas del GridView */
+    .grid-container td, .grid-container th {
+        padding: 8px; /* Espaciado interno de las celdas */
+        border: 1px solid #ddd; /* Borde de las celdas */
+        width: auto; /* Ancho automático, ajustado por contenido */
+        max-width: 200px; /* Ancho máximo para cada celda */
+        overflow: hidden; /* Evitar que el contenido sobresalga */
+        text-overflow: ellipsis; /* Mostrar puntos suspensivos en contenido largo */
+    }
+
+    /* Estilos para las cabeceras del GridView */
+    .grid-container th {
+        background-color: #f2f2f2; /* Color de fondo de las cabeceras */
+        font-weight: bold; /* Negrita para las cabeceras */
+    }
+
+    /* Ajuste para las filas impares del GridView */
+    .grid-container tr:nth-child(odd) {
+        background-color: #f9f9f9; /* Color de fondo alternativo para filas impares */
+    }
+
+    /* Estilo específico para el botón de eliminar en el GridView */
+    .grid-container .btnEliminar {
+        padding: 8px 16px; /* Espaciado interno para el botón */
+        width: auto;
+        font-size: 14px; /* Tamaño de fuente del texto del botón */
+        background-color: #dc3545; /* Color de fondo del botón */
+        color: white; /* Color del texto del botón */
+        border: none; /* Sin borde */
+        border-radius: 4px; /* Bordes redondeados */
+        cursor: pointer; /* Cambio de cursor al pasar el ratón */
+        transition: background-color 0.3s ease; /* Transición suave */
+    }
+
+        .grid-container .btnEliminar:hover {
+            background-color: #c82333; /* Color de fondo al pasar el ratón */
+        }
+
+
+
+
+
+.btn {
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color de texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor al pasar por encima */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+    .btn:hover {
+        background-color: #45a049; /* Color de fondo al pasar el ratón */
+    }
